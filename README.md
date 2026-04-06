@@ -1,11 +1,20 @@
 # garmin-connect-export script
 
-:exclamation: | There is a [report of a deactivated user account that might by caused by using this script](https://github.com/pe-st/garmin-connect-export/issues/60). The exact reasons are not known, and my account has never been deactivated. But be aware that I can give no guarantee that Garmin tolerates requests made from this script. I believe though that this script is fair use (it doesn't do anything other than automating stuff that you do in the browser). But be careful if you plan to run the script as periodical task (with `cron` etc)
----|---
-
 Download a copy of your Garmin Connect data, including stats and GPX tracks.
 
-Note that Garmin introduced a while ago (around May 2018, for GDPR compatibility) a possibility to [download all of your Garmin Connect data](https://www.garmin.com/en-US/account/datamanagement/exportdata/) in one zip file. Depending on your needs this might be enough, but the script here offers additional features like getting GPX tracks instead of the original upload format or limiting the export to just a couple of activities.
+:exclamation: | Due to [TLS fingerprinting](https://forums.garmin.com/apps-software/mobile-apps-web/f/garmin-connect-web/433892/tls-fingerprinting-blocks-third-party-clients), introduced in March 2026, this script no longer works
+---|---
+
+The whole community (myself included) was not able to work around the new obstacles (TLS fingerprinting) put in place by Garmin
+(see [Issue 130](https://github.com/pe-st/garmin-connect-export/issues/130)).
+
+- I'll probably not work on this project anymore until there is a way again to access the data in Garmin Connect.
+  (Maybe the [EU Data Act](https://en.wikipedia.org/wiki/Data_Act_(European_Union)) will improve the situation in automn 2026?)
+- I guess the [GDPR Data Export](https://www.garmin.com/en-US/account/datamanagement/exportdata/) (has existed 
+  since about May 2018) is probably the most future-proof approach to get your own data; there exist tools like
+  [garmin-babel](https://codeberg.org/michael-simons/garmin-babel) that facilitate working with this export.
+- The comments in the issue mentioned above have also some links to other tools; I did not try them, so I don't
+  know if they work.
 
 ## Forks and Branches
 
